@@ -1,0 +1,30 @@
+В проекте используется база данных - postgresql.
+Переменные окружения сервера находятся в файле server/.env
+
+
+БАЗА ДАННЫХ:
+Требуется развернуть локально postgresql и ввести команды из файла server/data.sql
+
+.ENV:
+PORT=5000
+JWT_ACCESS_SECRET = 23asdfgajglkajkl345j5
+JWT_REFRESH_SECRET = 42lasdfgklagj345sdaljkdfs
+SMTP_HOST =smtp.gmail.com -- хост smtp server
+SMTP_PORT=587 --порт на котором работает smtp протокол
+SMTP_USER =igos2006@gmail.com -- моя тестовая почта(можно использовать чтобы не создавать свою)
+SMTP_PASSWORD =qxjmetadeczpetve -- мой пароль от тестовой почты для данного приложения(можно использовать)
+API_URL = http://localhost:5000
+CLIENT_URL = http://localhost:3000
+DB_USERNAME=postgres -- ваш user от postgres
+DB_PASSWORD=****** - ваш пароль от postgres
+DB_HOST=localhost -- ваш хост postgres 
+DB_PORT=5432 -- ваш порт от postgres 
+DB_NAME=todoapp
+
+ДЛЯ ИНИЦИАЛИЗАЦИИ ПРОЕКТА:
+cd ./server -> npm i
+cd./client -> npm i  
+
+ДЛЯ ЗАПУСКА ПРИЛОЖЕНИЯ:
+cd ./server -> npm yarn start | npm start // запуск сервера
+cd ./client -> yarn start | npm start // запуск клиента
